@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="Expensescss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="header">
+    <h2>HOUSE EXPENSES🏠</h2>
+    <button id="darkmode">🌙</button>
+</div>
+    <div class="form">
+        <table>
+
+            <tr>
+                <th>
+                    <label>Type of Expenses:</label>
+                </th>
+                <th>
+                    <label>Date:</label>
+                </th>
+                <th>
+                    <label>Description:</label>
+                </th>
+
+                <th>
+                    <label>Amount:</label>
+                </th>
+            </tr>
+            <tr>
+
+                <td>
+                    <select id="typeofexpense">
+                        <option>Select</option>
+                        <option>Credit Card</option>
+                        <option>Gpay</option>
+                        <option>Netbanking</option>
+                        <option>Cash</option>
+                    </select>
+                </td>
+
+
+                <td><input type="date" placeholder="Enter Date" id="date"></td>
+
+
+                <td><input type="Text" placeholder="Milk,Vegetable,etc" id="description"></td>
+
+                <td><input type="number" placeholder="Enter Amount" id="amount"></td>
+
+                <td><button id="addexpbutton">Add Item</button></td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="cardcontainer">
+        <div class="card" id="creditcard">
+            <h4>Credit Card<span style="font-size:27px;">💳</span></h4>
+            <h3 id="creditcardtot">₹0</h3>
+        </div>
+        <div class="card" id="gpay">
+            <h4>Gpay<span style="font-size:27px;">📱</span></h4>
+            <h3 id="gpaytot">₹0</h3>
+        </div>
+        <div class="card" id="netbanking">
+            <h4>Netbanking<span style="font-size:27px;">🏦</span></h4>
+            <h3 id="netbankingtot">₹0</h3>
+        </div>
+        <div class="card" id="cash">
+            <h4>Cash<span style="font-size:27px;">💵</span></h4>
+            <h3 id="cashtot">₹0</h3> 
+        </div>
+        <div class="card" id="totalcard">
+            <h4>Total <span style="font-size:27px;">💰</span></h4>
+            <h3 id="total">₹0</h3>
+        </div>
+    </div>
+    <div class="resulttable">
+        <table id="exptable">
+            <tr>
+            <th>Date</th>
+            <th>Type of expense</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Action</th>
+            </tr>
+            <tr>
+                <td colspan="5" id="noexpdata">📋No Expenses till Now!</td>
+            </tr>
+        </table>
+    </div>
+    <button id="export">EXPORT</button>
+    <script src="Expensesjava.js"></script>
+</body>
+
+</html>

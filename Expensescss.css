@@ -1,0 +1,246 @@
+*{
+    margin:0px;
+    padding: 0px;
+     font-family: "Elms Sans", sans-serif;
+    
+}
+.header{
+    position: sticky;
+    top:0;
+    background-color:rgb(74, 43, 189)
+}
+.header h2{
+    text-align:left;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color:white;
+    margin:0;
+    padding-bottom: 10px;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+    
+}
+#darkmode{
+    background-color: black;
+    border: none;
+    border-radius: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   position:absolute;
+   right: 20px;
+    top: 10px;
+    font-size: 18px;
+   
+}
+.form{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+justify-content:center;
+    flex-wrap: wrap;
+    gap: 3px;
+
+}
+.form td,th{
+padding-left: 25px;
+padding-right: 25px;
+text-align: left;
+padding-bottom: 5px;
+padding-top: 5px;
+}
+.form table{
+    border: none;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-color :gray;
+    box-shadow: 4px 4px 10px -3px gray;
+}
+.form button{
+   padding-left: 30px;
+   padding-right: 30px;
+   white-space: nowrap;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   width:100%;
+   border-radius: 5px;
+   background-color:rgba(43, 6, 178, 0.853);
+   color: white;
+   border: none;
+
+}
+.form input,.form select{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width:100%;
+    border-radius: 10px;
+    border-color:black ;
+    text-align: center;
+    padding-right: 10px;
+}
+.form input::placeholder,option::placeholder{
+    color:black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 13px;
+}
+.card{
+    display:block;
+    width: 165px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding-left: 20px;
+    margin-right:0px;
+    padding-right: 20px;
+}
+#netbanking{
+border-left: 5px solid rgb(131, 7, 96);
+box-shadow:  1px 1px 10px -3px rgb(192, 150, 180);
+}
+#gpay{
+    border-left: 5px solid rgb(38, 73, 3);
+box-shadow:  -1px 1px 10px -3px  rgb(169, 184, 153);
+}
+#creditcard{
+    border-left: 5px solid rgb(202, 8, 8);
+box-shadow:  1px 1px 10px -3px rgb(191, 143, 143);
+}
+#cash{
+border-left: 5px solid rgb(222, 197, 8);
+box-shadow:  1px 1px 10px -3px rgb(216, 208, 145);
+}
+#totalcard{
+    border-left: 5px solid rgb(5, 239, 211);
+box-shadow:  1px 1px 10px -3px  rgb(185, 225, 220);
+}
+.cardcontainer{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    justify-content: center;   
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.resulttable {
+    width:60%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+   
+}
+.resulttable table{
+     border-collapse: collapse; /* Merges cell boundaries so the color connects */
+    width: 100%;
+    background-color: white;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+     table-layout: fixed;
+}
+.resulttable th{
+  background-color: rgba(240, 240, 240, 0.545);
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.11);
+    border-top: 2px solid rgba(0, 0, 0, 0.11);
+    padding: 12px ;
+}
+.resulttable tr,td,th{
+    width:20%;
+    text-align: center;
+}
+
+.form,.resulttable,.cardcontainer{
+    width:80%;
+    margin:auto;
+}
+#noexpdata{
+text-align: center;
+font-size: 17px;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+#export{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 90%;
+    margin-top: 40px;
+    background-color:rgba(43, 6, 178, 0.853) ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.deletebtn{
+    padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap;
+   padding-bottom: 8px;
+   padding-top: 8px;
+   border-radius: 10px;
+   border-color:red;
+   background-color: rgb(247, 215, 215);
+   color:red;
+   border-width: 2px;
+   margin-top: 6px;
+   font-weight: 2px;
+}
+
+.editbtn{
+    padding-left: 10px;
+   padding-right: 10px;
+   white-space: nowrap;
+   padding-bottom: 8px;
+   padding-top: 8px;
+   border-radius: 10px;
+   border-color:orange;
+   background-color: rgb(251, 238, 215);
+   color: orange;
+   border-width: 2px;
+   margin-top: 6px;
+   margin-right: 6px;
+   font-weight: 2px;
+
+}
+.dark{
+    background-color: #1e1e1e;
+    color: white;
+}
+.dark .form table{
+    background-color: #2d2d2d;
+    color: white;
+}
+.dark .card{
+    background:#2d2d2d;
+    color:white;
+}
+.dark .resulttable table{
+    background:#2d2d2d;
+    color:white;
+}
+.dark .resulttable th{
+    background:#3b3b3b;
+}
+.dark input,
+.dark select{
+    background:#444;
+    color:white;
+    border:1px solid #777;
+}
+.dark input::placeholder{
+    color:#ddd;
+}
+
+.dark .progress{
+    background:#555;
+}
+
