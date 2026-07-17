@@ -34,6 +34,9 @@ A responsive Expense Tracker web application built using HTML, CSS, and JavaScri
 2. Open `Expenses.html` in your browser.
 3. Start tracking your expenses.
 
+## 🌐 Live Demo
+
+https://pranaya-tech404.github.io/Expense-Tracker/
 
 ## 🔮 Future Improvements
 
