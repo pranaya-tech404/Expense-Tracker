@@ -31,7 +31,7 @@ A responsive Expense Tracker web application built using HTML, CSS, and JavaScri
 ## 🚀 How to Run
 
 1. Clone this repository.
-2. Open `Expenses.html` in your browser.
+2. Open `index.html` in your browser.
 3. Start tracking your expenses.
 
 ## 🌐 Live Demo
